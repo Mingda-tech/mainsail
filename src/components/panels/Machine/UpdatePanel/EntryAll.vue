@@ -46,8 +46,19 @@ export default class UpdatePanelEntryAll extends Mixins(BaseMixin) {
         this.boolShowDialog = true
     }
 
+    get modules() {
+        return this.$store.getters['server/updateManager/getUpdateManagerList'] ?? []
+    }
+
     updateAll() {
-        this.$socket.emit('machine.update.full', {})
+        // 逐个更新模块，跳过系统更新
+        this.modules.forEach((module: any) => {
+            if (['klipper', 'moonraker'].includes(module.name)) {
+                this.$socket.emit('machine.update.' + module.name, {})
+            } else {
+                this.$socket.emit('machine.update.client', { name: module.name })
+            }
+        })
     }
 }
 </script>

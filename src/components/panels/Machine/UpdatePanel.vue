@@ -31,10 +31,11 @@
                         <v-divider v-if="index" :key="'divider_' + module.name" class="my-0" />
                         <update-panel-entry :key="module.name" :repo="module.data" />
                     </template>
-                    <template v-if="existsSystemModul">
+                    <!-- 隐藏系统更新 -->
+                    <!--<template v-if="existsSystemModul">
                         <v-divider v-if="modules.length" class="my-0" />
                         <update-panel-entry-system />
-                    </template>
+                    </template>-->
                     <template v-if="showUpdateAll">
                         <v-divider class="mb-0 mt-2 border-top-2" />
                         <update-panel-entry-all />
