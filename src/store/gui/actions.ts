@@ -246,7 +246,10 @@ export const actions: ActionTree<GuiState, RootState> = {
         }
 
         for (const key of payload) {
-            if (['maintenance', 'timelapse', 'webcams'].includes(key)) {
+            // Preserve general and webcam configuration during factory resets.
+            if (['general', 'webcams'].includes(key)) continue
+
+            if (['maintenance', 'timelapse'].includes(key)) {
                 const url = baseUrl + '?namespace=' + key
 
                 const response = await fetch(url)
