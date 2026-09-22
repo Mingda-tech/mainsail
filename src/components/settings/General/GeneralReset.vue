@@ -83,7 +83,9 @@ export default class SettingsGeneralTabResetDatabase extends Mixins(BaseMixin, S
     }
 
     async loadResetableNamespaces() {
-        this.resetableNamespaces = await this.loadBackupableNamespaces()
+        this.resetableNamespaces = (await this.loadBackupableNamespaces()).filter(
+            (namespace) => !['uiSettings', 'webcams'].includes(namespace.value)
+        )
 
         // stop if history is not enabled
         if (!this.moonrakerComponents.includes('history')) return
