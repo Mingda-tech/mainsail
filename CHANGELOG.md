@@ -2,6 +2,29 @@
 # Changelog
 All notable changes to Mainsail will be documented in this file.
 
+## [2.11.5](https://github.com/mainsail-crew/mainsail/releases/tag/v2.11.5) - 2026-09-19
+### Bug Fixes and Improvements
+
+- Preserve general and webcam settings during factory reset
+
+## [2.11.4](https://github.com/mainsail-crew/mainsail/releases/tag/v2.11.4) - 2026-03-14
+### Features
+
+- Hide system updates from update panel
+
+### Bug Fixes and Improvements
+
+- Fix heightmap display issues
+- Fix heightmap display issues(beta2)
+
+### Styling
+
+- Change the defaultLogoColor
+
+### Other
+
+- Update git actions in release.yaml
+
 ## [2.11.3](https://github.com/mainsail-crew/mainsail/releases/tag/v2.11.3) - 2024-05-15
 ### Features
 
@@ -600,7 +623,6 @@ All notable changes to Mainsail will be documented in this file.
 - Create folders with spaces in the name ([#942](https://github.com/mainsail-crew/mainsail/pull/942))
 - Add fallback for gcode files without thumbnail ([#959](https://github.com/mainsail-crew/mainsail/pull/959))
 - Match mcu temp sensor of additional mcus ([#957](https://github.com/mainsail-crew/mainsail/pull/957))
-- Max_power setting in miscellaneous panel ([#953](https://github.com/mainsail-crew/mainsail/pull/953))
 - Remove js scrollbars in body & editor ([#962](https://github.com/mainsail-crew/mainsail/pull/962))
 - Fix output with number groupings & add slicer in csv header ([#967](https://github.com/mainsail-crew/mainsail/pull/967))
 - Reset webcam store on printer switch ([#996](https://github.com/mainsail-crew/mainsail/pull/996))
@@ -616,6 +638,7 @@ All notable changes to Mainsail will be documented in this file.
 - Use correct unit for pressure advance ([#1053](https://github.com/mainsail-crew/mainsail/pull/1053))
 - Fix dep loading issue after update vite ([#1058](https://github.com/mainsail-crew/mainsail/pull/1058))
 - Remove scrollbar on init load of status panel ([#1059](https://github.com/mainsail-crew/mainsail/pull/1059))
+- Max_power setting in miscellaneous panel ([#953](https://github.com/mainsail-crew/mainsail/pull/953))
 
 ### Refactor
 
@@ -667,14 +690,14 @@ All notable changes to Mainsail will be documented in this file.
 - **en**: Fix typos in English localization ([#924](https://github.com/mainsail-crew/mainsail/pull/924))
 - **ko-kr**: Fix Korean localization ([#890](https://github.com/mainsail-crew/mainsail/pull/890))
 - **ko-kr**: Update Korean localization ([#894](https://github.com/mainsail-crew/mainsail/pull/894))
+- **ko-kr**: Update Korean localization ([#914](https://github.com/mainsail-crew/mainsail/pull/914))
 - **ko-kr**: Fix Korean localization ([#890](https://github.com/mainsail-crew/mainsail/pull/890))
 - **ko-kr**: Update Korean localization ([#894](https://github.com/mainsail-crew/mainsail/pull/894))
-- **ko-kr**: Update Korean localization ([#914](https://github.com/mainsail-crew/mainsail/pull/914))
 - **ru**: Update ru.json ([#889](https://github.com/mainsail-crew/mainsail/pull/889))
 - **ru**: Update ru.json ([#889](https://github.com/mainsail-crew/mainsail/pull/889))
-- **zh**: Update Chinese localization ([#896](https://github.com/mainsail-crew/mainsail/pull/896))
 - **zh**: Update Chinese localization ([#896](https://github.com/mainsail-crew/mainsail/pull/896))
 - **zh**: Update Chinese localization ([#906](https://github.com/mainsail-crew/mainsail/pull/906))
+- **zh**: Update Chinese localization ([#896](https://github.com/mainsail-crew/mainsail/pull/896))
 - Fix locale keys ([#916](https://github.com/mainsail-crew/mainsail/pull/916))
 - Fix Editor placeholder for download/upload snackbar ([#919](https://github.com/mainsail-crew/mainsail/pull/919))
 
@@ -726,18 +749,21 @@ All notable changes to Mainsail will be documented in this file.
 - **CrossControl**: Step size was not applied correctly ([#805](https://github.com/mainsail-crew/mainsail/pull/805))
 - **SettingsPresetTab**: Improve form validation for heater preset ([#749](https://github.com/mainsail-crew/mainsail/pull/749))
 - **TemperaturePanel.vue**: Remove hover effect ([#785](https://github.com/mainsail-crew/mainsail/pull/785))
+- **env**: Parse environment variable as string ([#632](https://github.com/mainsail-crew/mainsail/pull/632))
+- Video and download link in timelapse video dialog ([#611](https://github.com/mainsail-crew/mainsail/pull/611))
+- Console error regarding touch directive ([#633](https://github.com/mainsail-crew/mainsail/pull/633))
 - Import bugfixes from release v2.1.2 ([#639](https://github.com/mainsail-crew/mainsail/pull/639))
 - Removing remote printer in remote mode ([#676](https://github.com/mainsail-crew/mainsail/pull/676))
 - Fix gcode from macros with single char attributes ([#680](https://github.com/mainsail-crew/mainsail/pull/680))
 - Match input field behavior to slider behavior ([#684](https://github.com/mainsail-crew/mainsail/pull/684))
 - Missing icon imports (follow up of #646) ([#687](https://github.com/mainsail-crew/mainsail/pull/687))
 - Don't allow to add/update printers with empty hostname ([#693](https://github.com/mainsail-crew/mainsail/pull/693))
-- Icon rotation with svg icons ([#691](https://github.com/mainsail-crew/mainsail/pull/691))
 - Fix init issue in controls panel
+- Icon rotation with svg icons ([#691](https://github.com/mainsail-crew/mainsail/pull/691))
 - Missing object in dashboard expand panel getter
 - Search temperature_store_size in data_store and server ([#705](https://github.com/mainsail-crew/mainsail/pull/705))
-- Hide gcode thumbnail, if a webcam is active in printer farm ([#706](https://github.com/mainsail-crew/mainsail/pull/706))
 - Double defined variable viewport in SettingsDashboardTab.vue
+- Hide gcode thumbnail, if a webcam is active in printer farm ([#706](https://github.com/mainsail-crew/mainsail/pull/706))
 - Add missing translation keys ([#714](https://github.com/mainsail-crew/mainsail/pull/714))
 - Disable home button in heightmap page while printing ([#722](https://github.com/mainsail-crew/mainsail/pull/722))
 - Missing file icon import in gcode file browser ([#731](https://github.com/mainsail-crew/mainsail/pull/731))
@@ -795,6 +821,9 @@ All notable changes to Mainsail will be documented in this file.
 ### Refactor
 
 - **MachineSettingsPanel.vue**: Tweak visual appearance ([#784](https://github.com/mainsail-crew/mainsail/pull/784))
+- Migrate `longpress.js` to `longpress.ts` ([#619](https://github.com/mainsail-crew/mainsail/pull/619))
+- Replace 'vue-headful' with 'vue-meta' ([#620](https://github.com/mainsail-crew/mainsail/pull/620))
+- Make sure that port '80' and '443' are correctly passed through ([#631](https://github.com/mainsail-crew/mainsail/pull/631))
 - Move rename button in heightmap ([#665](https://github.com/mainsail-crew/mainsail/pull/665))
 - Rework webcam settings visuals ([#679](https://github.com/mainsail-crew/mainsail/pull/679))
 - Make all MachineSettings use new NumberInput ([#651](https://github.com/mainsail-crew/mainsail/pull/651))
@@ -814,6 +843,7 @@ All notable changes to Mainsail will be documented in this file.
 ### Styling
 
 - **icons**: Update PWA icons ([#727](https://github.com/mainsail-crew/mainsail/pull/727))
+- Add prettier as default formatter ([#614](https://github.com/mainsail-crew/mainsail/pull/614))
 - Use prettier on other file formats as well ([#648](https://github.com/mainsail-crew/mainsail/pull/648))
 - Improve prettier integration ([#662](https://github.com/mainsail-crew/mainsail/pull/662))
 - Order all locale keys alphabetically ([#702](https://github.com/mainsail-crew/mainsail/pull/702))
@@ -822,6 +852,7 @@ All notable changes to Mainsail will be documented in this file.
 
 ### Localization
 
+- **da**: Update da.json ([#596](https://github.com/mainsail-crew/mainsail/pull/596))
 - **da**: Updated ([#718](https://github.com/mainsail-crew/mainsail/pull/718))
 - **de**: Update German locale ([#871](https://github.com/mainsail-crew/mainsail/pull/871))
 - **en**: Fix typo in GreaterOrEqualError ([#854](https://github.com/mainsail-crew/mainsail/pull/854))
@@ -835,6 +866,8 @@ All notable changes to Mainsail will be documented in this file.
 - **ja**: Update Japanese localization ([#864](https://github.com/mainsail-crew/mainsail/pull/864))
 - **ko-kr**: Add new lanquage pack such that south korean users ([#874](https://github.com/mainsail-crew/mainsail/pull/874))
 - **nl**: Update dutch localization ([#861](https://github.com/mainsail-crew/mainsail/pull/861))
+- **pl**: Bugfix 29/01/2022 ([#598](https://github.com/mainsail-crew/mainsail/pull/598))
+- **pl**: Update 03.02.2022 ([#606](https://github.com/mainsail-crew/mainsail/pull/606))
 - **pl**: Update Polish locale ([#884](https://github.com/mainsail-crew/mainsail/pull/884))
 - **ru**: Update Russian locale ([#836](https://github.com/mainsail-crew/mainsail/pull/836))
 - **se-SV**: Add swedish localization ([#762](https://github.com/mainsail-crew/mainsail/pull/762))
@@ -843,6 +876,9 @@ All notable changes to Mainsail will be documented in this file.
 
 ### Documentation
 
+- Split up quicktips ([#584](https://github.com/mainsail-crew/mainsail/pull/584))
+- Cleanup assets folder ([#601](https://github.com/mainsail-crew/mainsail/pull/601))
+- Update credits ([#602](https://github.com/mainsail-crew/mainsail/pull/602))
 - Improve README.md ([#709](https://github.com/mainsail-crew/mainsail/pull/709))
 
 ### Other
@@ -850,6 +886,9 @@ All notable changes to Mainsail will be documented in this file.
 - **deps**: Regenerate lockfile because of indent change ([#652](https://github.com/mainsail-crew/mainsail/pull/652))
 - **deps**: Update dependencies ([#681](https://github.com/mainsail-crew/mainsail/pull/681))
 - **deps**: Update dependencies ([#717](https://github.com/mainsail-crew/mainsail/pull/717))
+- **docker**: Windows compatible, without docker-compose wrapper ([#613](https://github.com/mainsail-crew/mainsail/pull/613))
+- Add .editorconfig ([#582](https://github.com/mainsail-crew/mainsail/pull/582))
+- Fix initial development environment ([#593](https://github.com/mainsail-crew/mainsail/pull/593))
 - Add cypress for e2e testing ([#655](https://github.com/mainsail-crew/mainsail/pull/655))
 - Add host settings to vite.config.ts ([#671](https://github.com/mainsail-crew/mainsail/pull/671))
 - Remove development docker ([#677](https://github.com/mainsail-crew/mainsail/pull/677))
@@ -862,40 +901,6 @@ All notable changes to Mainsail will be documented in this file.
 - Exclude .DS_Store files in build.zip ([#887](https://github.com/mainsail-crew/mainsail/pull/887))
 
 ## [2.1.2](https://github.com/mainsail-crew/mainsail/releases/tag/v2.1.2) - 2022-02-14
-### Bug Fixes and Improvements
-
-- **env**: Parse environment variable as string ([#632](https://github.com/mainsail-crew/mainsail/pull/632))
-- Video and download link in timelapse video dialog ([#611](https://github.com/mainsail-crew/mainsail/pull/611))
-- Console error regarding touch directive ([#633](https://github.com/mainsail-crew/mainsail/pull/633))
-
-### Refactor
-
-- Migrate `longpress.js` to `longpress.ts` ([#619](https://github.com/mainsail-crew/mainsail/pull/619))
-- Replace 'vue-headful' with 'vue-meta' ([#620](https://github.com/mainsail-crew/mainsail/pull/620))
-- Make sure that port '80' and '443' are correctly passed through ([#631](https://github.com/mainsail-crew/mainsail/pull/631))
-
-### Styling
-
-- Add prettier as default formatter ([#614](https://github.com/mainsail-crew/mainsail/pull/614))
-
-### Localization
-
-- **da**: Update da.json ([#596](https://github.com/mainsail-crew/mainsail/pull/596))
-- **pl**: Bugfix 29/01/2022 ([#598](https://github.com/mainsail-crew/mainsail/pull/598))
-- **pl**: Update 03.02.2022 ([#606](https://github.com/mainsail-crew/mainsail/pull/606))
-
-### Documentation
-
-- Split up quicktips ([#584](https://github.com/mainsail-crew/mainsail/pull/584))
-- Cleanup assets folder ([#601](https://github.com/mainsail-crew/mainsail/pull/601))
-- Update credits ([#602](https://github.com/mainsail-crew/mainsail/pull/602))
-
-### Other
-
-- **docker**: Windows compatible, without docker-compose wrapper ([#613](https://github.com/mainsail-crew/mainsail/pull/613))
-- Add .editorconfig ([#582](https://github.com/mainsail-crew/mainsail/pull/582))
-- Fix initial development environment ([#593](https://github.com/mainsail-crew/mainsail/pull/593))
-
 ### Release
 
 - Release v2.1.2 ([#639](https://github.com/mainsail-crew/mainsail/pull/639))
@@ -936,6 +941,7 @@ All notable changes to Mainsail will be documented in this file.
 ## [2.1.0](https://github.com/mainsail-crew/mainsail/releases/tag/v2.1.0) - 2022-01-19
 ### Features
 
+- **console**: Autofocus input field after click on a command
 - **editor**: Add webcam.conf as webcamd config
 - **panel**: Disable text select for panel headline
 - Add backup and restore gcode viewer state
@@ -975,8 +981,8 @@ All notable changes to Mainsail will be documented in this file.
 - Add autofocus and action by press enter in crate/rename dialogs in config file manager
 - Add autofocus and action by press enter in crate/rename dialogs in gcode files
 - New design of the web UI ([#408](https://github.com/mainsail-crew/mainsail/pull/408))
-- Lockable sliders ([#412](https://github.com/mainsail-crew/mainsail/pull/412))
 - Reset database namespaces and/or history jobs/totals
+- Lockable sliders ([#412](https://github.com/mainsail-crew/mainsail/pull/412))
 - Gui for the timelapse moonraker plugin ([#417](https://github.com/mainsail-crew/mainsail/pull/417))
 - Add save frames button in TimelapseStatusPanel.vue
 - Disable camera setting in timelapse setting if snapshoturl exists in moonraker.conf
@@ -1016,9 +1022,9 @@ All notable changes to Mainsail will be documented in this file.
 - Safe gcode offset button wrong type
 - Font size in console was to big after font change
 - Hide main branch in update manager
+- Update manager commits list icon and show days if smaller than 1 day ago
 - Hide string chars in default macro params
 - Hide horizontal scrollbar in settings menu
-- Update manager commits list icon and show days if smaller than 1 day ago
 - Translations in ui-settings tab
 - Change default extruder feedrates
 - Remove eventListener in farmprinter panel
@@ -1134,9 +1140,9 @@ All notable changes to Mainsail will be documented in this file.
 - Restart stream when switching between mjpegstreamer webcams
 - Hide fps in farm printer panel with mjpegstreamer webcam
 - Send temp input only when blur, select value or press enter or tab key
+- Only update / send temp commands on blur if they are changed
 - Sidebar logo and top-sidebar overlay ([#514](https://github.com/mainsail-crew/mainsail/pull/514))
 - Button and input placement based on screen width ([#515](https://github.com/mainsail-crew/mainsail/pull/515))
-- Only update / send temp commands on blur if they are changed
 - Only update / send temp commands if they are changed
 - Gcode files view with queue on mobile devices
 - Request metadata for gcode files, when using search function
@@ -1164,8 +1170,8 @@ All notable changes to Mainsail will be documented in this file.
 - Remove padding right in toolbar to move toolbar buttons to the right corner
 - Change color of cooldown button
 - Remove debug output
-- Change defaults macro param usecase
 - Convert editor confirm dialog to new panel component
+- Change defaults macro param usecase
 - Sort interface settings tabs and add a border between navi and content
 - Rename theme settings tab to ui settings and move some ui settings from general to ui-settings
 - Convert emergency stop dialog to new panel component
@@ -1270,6 +1276,8 @@ All notable changes to Mainsail will be documented in this file.
 
 ### Documentation
 
+- Update screenshot to v2.0.0
+- Multi webcam documentation ([#343](https://github.com/mainsail-crew/mainsail/pull/343))
 - Fix typo in CONTRIBUTING.md
 - Major docs update by tomlawesome ([#358](https://github.com/mainsail-crew/mainsail/pull/358))
 - Remove sudo for editing printer.cfg
@@ -1277,8 +1285,8 @@ All notable changes to Mainsail will be documented in this file.
 - Update manual setup/update ([#368](https://github.com/mainsail-crew/mainsail/pull/368))
 - Add Rat Rig community theme by Raabi91
 - Add FAQ with some klipper warnings
-- Pre-flight fix
 - Update moonraker dependencies
+- Pre-flight fix
 - Add 'command format mismatch' to faq ([#406](https://github.com/mainsail-crew/mainsail/pull/406))
 - Update mainsailOS urls
 - Updated all meteyou/mainsail urls to mainsail-crew/mainsail
@@ -1304,8 +1312,19 @@ All notable changes to Mainsail will be documented in this file.
 
 ### Other
 
+- **App**: Fix build warnings
+- **build**: Change sass version as workaround for vuetify sass warnings
 - **build**: Lint errors ([#381](https://github.com/mainsail-crew/mainsail/pull/381))
 - **deps**: Bump nokogiri from 1.12.3 to 1.12.5 in /docs ([#363](https://github.com/mainsail-crew/mainsail/pull/363))
+- **editor**: Update gcodeviewer
+- **eslint**: Config and fix eslint rules ([#340](https://github.com/mainsail-crew/mainsail/pull/340))
+- **gcodeviewr**: Convert to TS
+- **gcodeviewr**: Fix some types
+- **github**: Add build workflow for test builds
+- **github**: Add build workflow for test builds
+- Increment version number to 2.1.0-alpha
+- Fix some eslint warnings
+- Fix eslint rules and update from develop
 - Merge master in develop
 - Update gcodeviewer to v2.1.10
 - Update gcodeviewer to v2.1.11
@@ -1326,22 +1345,11 @@ All notable changes to Mainsail will be documented in this file.
 ## [2.0.1](https://github.com/mainsail-crew/mainsail/releases/tag/v2.0.1) - 2021-09-08
 ### Features
 
-- **console**: Autofocus input field after click on a command
 - Gcodeviewer ([#322](https://github.com/mainsail-crew/mainsail/pull/322))
-
-### Documentation
-
-- Update screenshot to v2.0.0
-- Multi webcam documentation ([#343](https://github.com/mainsail-crew/mainsail/pull/343))
 
 ### Other
 
-- **editor**: Update gcodeviewer
-- **eslint**: Config and fix eslint rules ([#340](https://github.com/mainsail-crew/mainsail/pull/340))
-- **gcodeviewr**: Convert to TS
-- **gcodeviewr**: Fix some types
 - **type**: Fix type for build
-- Fix eslint rules and update from develop
 - Increment version number to V2.0.1
 
 ## [2.0.0](https://github.com/mainsail-crew/mainsail/releases/tag/v2.0.0) - 2021-08-26
@@ -1402,15 +1410,9 @@ Signed-off-by: Stefan Dej <meteyou@gmail.com>
 
 ### Other
 
-- **App**: Fix build warnings
-- **build**: Change sass version as workaround for vuetify sass warnings
 - **docs**: Update gem packages
-- **github**: Add build workflow for test builds
-- **github**: Add build workflow for test builds
 - Increment version number
 - Increment version number to 2.0.0-rc.2
-- Increment version number to 2.1.0-alpha
-- Fix some eslint warnings
 - Increment version number to V2.0.0
 
 ## [1.6.0](https://github.com/mainsail-crew/mainsail/releases/tag/v1.6.0) - 2021-05-18
@@ -1637,13 +1639,13 @@ Signed-off-by: Stefan Dej <meteyou@gmail.com>
 - Add "edit file" in context menu of configfiles
 - Allows flipping the webcam horizontally and vertically
 - Add slicer version in g-codes files
-- Ensures app bar doesn't scroll off page
 - Feature: SAVE_CONFIG button, if klipper needs a "SAVE_CONFIG"
 bugfix: temp chart bug after loosing connection ([#82](https://github.com/mainsail-crew/mainsail/pull/82))
 bugfix: clear mainsail store after klipper restart
 bugfix: heater min/max temp input field
 
 Signed-off-by: Stefan Dej <meteyou@gmail.com>
+- Ensures app bar doesn't scroll off page
 - Read version from package.json
 
 ### Refactor
@@ -1701,4 +1703,6 @@ bugfix: update endstop status mutations
 
 - Temperature_sensor min/max temp by hover
 - Select value by focus heater input field
+
+## [0.0.5](https://github.com/mainsail-crew/mainsail/releases/tag/v0.0.5) - 2020-03-13
 
